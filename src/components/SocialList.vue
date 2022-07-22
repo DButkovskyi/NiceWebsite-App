@@ -24,9 +24,16 @@ export default {
 
 <style scoped>
     /*socail media nice links*/
+  a {
+  text-decoration: none;
+  color: white;
+  }
   .socalList{
     display:inline-flex;
     padding-top: 50px;
+    justify-content: center;
+    width: 100%;
+    
   }
   .socalList .icon{
     margin:20px;

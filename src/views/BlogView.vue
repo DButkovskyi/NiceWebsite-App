@@ -1,5 +1,20 @@
 <template>
   <div class="blog">
-    <h1>This is an blog page</h1>
+    <SocialList class="social"/>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import SocialList from "/src/components/SocialList.vue"
+export default {
+  name: 'BlogView',
+  components: {
+    SocialList
+  }
+}
+</script>
+
+<style>
+  
+</style>

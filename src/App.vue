@@ -11,6 +11,7 @@
 </template>
 
 <style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
   * {
   margin: 0;
   padding: 0;
@@ -41,6 +42,12 @@ html, body {
 
 .center {
   text-align: center;
+}
+.round-img {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  border-radius: 20%;
 }
 
   
