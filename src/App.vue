@@ -9,7 +9,9 @@
   </nav>
   <router-view/>
 </template>
-
+<script>
+    
+</script>
 <style>
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
   * {
@@ -48,6 +50,10 @@ html, body {
   width:100%;
   object-fit: cover;
   border-radius: 20%;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 
   
