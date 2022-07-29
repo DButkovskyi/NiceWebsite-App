@@ -21,6 +21,16 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: () => import('../views/ContactView.vue')
+  },
+  {
+    path: '/post1',
+    name: 'post1',
+    component: () => import('../views/post1.vue')
+  },
+  {
+    path: '/post2',
+    name: 'post2',
+    component: () => import('../views/post2.vue')
   }
 ]
 

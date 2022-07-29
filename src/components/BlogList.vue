@@ -1,32 +1,40 @@
 <template>
-  <div class = "blog-post-container">
+  <div v-for="(title, description, category, path) in posts" class = "blog-post-container">
       <div class = "blog-post-photo blog-post-section">
-        <a href="#" data-title="ReadMore"><img class="round-img" src = "https://images.unsplash.com/photo-1655070834453-b29065fd7e63?ixlib=rb-1.2.1" alt = "photo"></a>
+        <router-link :to="{path:title.path}" ><img class="round-img" src = "https://images.unsplash.com/photo-1655070834453-b29065fd7e63?ixlib=rb-1.2.1" alt = "photo"></router-link>
       </div>
       <div class = "blog-post-text blog-post-section">
-        <h6>Category: Coding</h6>
-        <a href="#" data-title="ReadMore"><h3 class="center">First website: prerequisites</h3></a>
-        <span>How to get started with your first website</span>
-        <a class = "readMore" href="#" data-title="ReadMore">Read more</a>
+        <h6> Category:{{title.category}} </h6>
+        <router-link :to="{path:title.path}"><h3 class="center"> {{title.title}} </h3></router-link>
+        <span> {{title.description}} </span>
+        <router-link class = "readMore" :to="{path:title.path}">Read more</router-link>
       </div>
     </div>
-  <div class = "blog-post-container">
-      <div class = "blog-post-photo blog-post-section">
-        <a href="#" data-title="ReadMore"><img class="round-img" src = "https://images.unsplash.com/photo-1655070834453-b29065fd7e63?ixlib=rb-1.2.1" alt = "photo"></a>
-      </div>
-      <div class = "blog-post-text blog-post-section">
-        <h6>Category: Coding</h6>
-        <a href="#" data-title="ReadMore"><h3 class="center">Getting Started</h3></a>
-        <span>The story of me and my first website</span>
-        <a class = "readMore" href="#" data-title="ReadMore">Read more</a>
-      </div>
-    </div>
+  
   
 </template>
 
 <script>
 export default {
   name: 'BlogList',
+  data() {
+    return {
+      posts: [
+        { 
+          title: 'First website: prerequisites',
+          category: 'Coding',
+          description: 'How to get started with your first website',
+          path: '/post2',
+        },
+        {
+          title: 'Getting Started',
+          category: 'Coding', 
+          description: 'The story of me and my first website',
+          path: '/post1'
+        },
+      ]
+    }
+  }
 }
 </script>
 <style>
