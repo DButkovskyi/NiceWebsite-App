@@ -6,8 +6,8 @@
 	<div>
 			<h4 class="center">Please contact me with any questions</h4>
 	</div>
-    <form action="https://formsubmit.co/danbutk@gmail.com" method="POST">
-      <input type="hidden" name="_next" value="https://nice-website.baneste.repl.co/thankyou.html">
+    <form action="https://formsubmit.co/d069574e5f1592876bb761be9cedc2c9" method="POST">
+      <input type="hidden" name="_next" value="https://nicewebsite-app.baneste.repl.co/#/thankyou">
       <input type="hidden" name="_captcha" value="false">
       <div class="contact-container">
   			<div class="input-container">
